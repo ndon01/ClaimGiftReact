@@ -1,0 +1,30 @@
+.bodyContainer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px);
+    bottom: 100px;
+}
+
+.noteContainer {
+    background-color: rgb(55, 55, 55);
+    border-radius: 25px;
+    width: 400px;
+    height: 300px;
+    padding: 25px;
+    color: white;
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardBodyContainer {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+}
