@@ -28,7 +28,7 @@ function App() {
             <p>Dear MeeMaw,</p>
 
             <p style={{ textAlign: "center" }}>
-              We are wishing you a very happy birthday from the Donahues.{" "}
+              We are wishing you a very happy birthday and send you so much love{" "}
             </p>
             <p style={{ textAlign: "center" }}>❤️❤️❤️</p>
             <p>Love,</p>
