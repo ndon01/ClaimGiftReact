@@ -186,7 +186,7 @@ function App() {
             {/* right */}
             <div>
               {/* Next */}
-              <button className='card-button-next' id='card-button-next' onClick={() => {
+              <button className={`card-button-next ${pageNumber == 2 ? 'claimed' : ''}`} id='card-button-next' onClick={() => {
                 if (pageNumber == 2) {
                  
                     function random(max){
@@ -218,7 +218,7 @@ function App() {
 
                 setPageNumber(pageNumber == 1 ? 2 : pageNumber == 2 ? 3 : 1)
               }}
-              style={pageNumber == 2 ? {backgroundColor: 'rgba(90,180,50,1)', width: '150px', left: '25px'} : {}}
+              
               >
                 {pageNumber == 1 ? 'Next' : pageNumber == 2 ? 'Claim Gift' : 'Restart'}
               </button>

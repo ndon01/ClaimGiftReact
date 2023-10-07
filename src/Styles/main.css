@@ -1,6 +1,16 @@
 html, body {
-    background-color: rgba(145, 24, 156, 0.521);    overflow: hidden;
-    margin: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    display:contents;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
 }
 
 canvas {
@@ -10,14 +20,14 @@ canvas {
 }
 
 .page-container {
-    position: relative;
-    margin-inline: 50px;
+    position: absolute;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .card-container {
@@ -38,7 +48,7 @@ canvas {
 }
 
 .card-inner {
-    width: 600px;
+    width: 100%;
 
     height: var(--card-height);
     border-radius: 20px;
@@ -64,21 +74,19 @@ canvas {
 
     background-color: transparent;
 
-    display: flex;
-    justify-content: center;
 }
 
 
 .card-button-next {
     position: relative;
-    left: 0;
-    top: calc(((var(--bottom-bar-height))/2) - 22.5px);
+    left: 253px;
+    top: 30px;
     background-color: rgb(255,255,255);
     border: none;
     border-radius: 10px;
     
     width: 100px;
-    height: 45px;
+    height: 40px;
     
     transition: all .5s;
 
@@ -86,6 +94,10 @@ canvas {
     font-size: 1rem;
 }
 
+.claimed {
+    width: 150px;
+    background-color: #4fc978
+}
 
 .card-button-next:hover {
     background-color: rgb(150,150,150);
@@ -166,3 +178,23 @@ canvas {
     animation: confettiRain 8s infinite;
   }
   
+  @media only screen and (max-width: 600px) {
+    .card-container {
+        width: 100%;
+        
+    }
+
+    :root {
+        --card-height: 90vh
+    }
+
+    .card-button-next {
+
+        text-decoration: none;
+        color: black;
+    }
+
+    .claimed {
+        width: 129px;
+    }
+}
