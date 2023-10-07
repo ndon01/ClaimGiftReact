@@ -1,0 +1,54 @@
+.CoverFilter {
+        
+    /* Add the blur effect */
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+    
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+  }
+
+  .FloatingObjectBase {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    top:50px;
+    left: 0px;
+  }
+
+  .falling {
+    position: absolute;
+    animation: fallingAnimation 10s infinite;
+  }
+
+  @keyframes fallingAnimation {
+    to {
+        top: 1000px;
+        transform: rotate(2160deg);
+    } 
+  }
+
+  .ConfettiWrapper {
+    position: absolute;
+    /* Full height */
+    height: 100%; 
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
