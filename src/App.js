@@ -69,7 +69,7 @@ function App() {
 
               setPageNumber(pageNumber === 1 ? 2 : pageNumber === 2 ? 3 : 1);
             }}
-            style={{ height: "40px", width: "100px", borderRadius: "10px" }}
+            style={{ height: "40px", width: "100px", borderRadius: "10px", backgroundColor: (pageNumber === 2 ? "#4fd94f" : "#FFFFFF") }}
           >
             {pageNumber === 1 ? "Next" : pageNumber === 2 ? "Claim" : "Restart"}
           </button>
